@@ -1,0 +1,316 @@
+
+:root {
+    --header-height: 3rem;
+  
+    /*========== Colors ==========*/
+    /* Change favorite color to match images */
+    /*Green dark 190 - Green 171 - Grren Blue 200*/
+    --hue-color: 190;
+  
+    /* HSL color mode */
+    --first-color: hsl(var(--hue-color), 64%, 22%);
+    --first-color-second: hsl(var(--hue-color), 64%, 22%);
+    --first-color-alt: hsl(var(--hue-color), 64%, 15%);
+    --title-color: hsl(var(--hue-color), 64%, 18%);
+    --text-color: hsl(var(--hue-color), 24%, 35%);
+    --text-color-light: hsl(var(--hue-color), 8%, 60%);
+    --input-color: hsl(var(--hue-color), 24%, 97%);
+    --body-color: hsl(var(--hue-color), 100%, 99%);
+    --white-color: #FFF;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
+  
+    /*========== Font and typography ==========*/
+    --body-font: 'Open Sans', sans-serif;
+    --title-font: 'Raleway', sans-serif;
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+  
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+  
+    /*========== Margenes Bottom ==========*/
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-25: 1.25rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+  
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+  
+    /*========== Hover overlay ==========*/
+    --img-transition: .3s;
+    --img-hidden: hidden;
+    --img-scale: scale(1.1);
+  }
+  
+  @media screen and (min-width: 968px) {
+    :root {
+      --biggest-font-size: 4rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.75rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+    }
+  }
+
+
+
+/* Formulario de Compra */
+  
+
+.checkoutLayout{
+    width: 600px;
+    max-width: 600px;
+    margin: 0 auto;
+    float: left;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+.checkoutLayout .right{
+ 
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 40px;
+    color: #ffffff;
+    
+}
+.checkoutLayout .right .form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    border-bottom: 1px solid #ffffff7a;
+    padding-bottom: 20px;
+    
+}
+
+
+.checkoutLayout .form h1,
+.checkoutLayout .form .group:nth-child(-n+2){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+.checkoutLayout .form input, 
+.checkoutLayout .form select
+
+{
+    
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 10px;
+
+    border: 1px solid rgb(137, 221, 11);
+    background-color: transparent;
+    color: #a1a1a1;
+}
+.checkoutLayout .right .return .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.checkoutLayout .right .return .row div:nth-child(2){
+    font-weight: bold;
+    font-size: x-large;
+}
+
+
+
+
+.cart-content h1{
+ 
+    padding: 20px 0;
+    color: #FFF;
+}
+
+
+.checkoutLayout .form .payment-methods {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 100px; /* Espacio entre los botones */
+    max-width: calc(200% - 10px); /* Anchura máxima de cada botón (mitad del contenedor con espacio entre ellos) */
+}
+
+
+
+.checkoutLayout .form .payment-methods button {
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    color: #FFF;
+    outline: none;
+    margin-top: 10px;
+    font-size: 2rem;
+    
+}
+
+
+/* Modal Diseño */
+
+
+
+.fondo_transparente{
+    top: 0;
+    left: 0;
+    background: transparent;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: none;    
+}
+.modal{
+    background: transparent;
+    width: 600px;
+    height: 500px;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+
+}
+.modal_cerrar{
+    background: transparent;
+    position: absolute;
+    right: 15px;
+    color: rgb(255, 255, 255);
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+
+
+
+/* Formulario Tarjeta  */
+
+
+
+
+.input_group {
+    margin-bottom: 8px;
+    width: 100%;
+    position: static;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+}
+
+.input_box {
+    width: 100%;
+    margin-right: 12px;
+    position: relative;
+    
+}
+
+.input_box h4 {
+    text-align: center;
+    color: #FFF;
+    
+}
+
+
+.input_box:last-child {
+    margin-right: 0;
+}
+
+.input_box .name {
+    padding: 14px 10px 14px 50px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    border-radius: 3px;
+    color: rgb(137, 221, 11);
+}
+
+.input_box .name:focus, .dob:focus {
+    -webkit-box-shadow: 0 0 2px 1px rgb(137, 221, 11);
+    -moz-box-shadow: 0 0 2px 1px rgb(137, 221, 11);
+    box-shadow: 0 0 2px 1px rgb(137, 221, 11);
+    border: 1px solid rgb(137, 221, 11);
+}
+
+.input_box .icon {
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    color: rgb(137, 221, 11);
+    background-color: transparent;
+    border-radius: 2px 0 0 2px;
+    transition: 0.3s;
+    font-size: 20px;
+    pointer-events: none;
+    border: none;
+    border-right: none;
+}
+
+.name:focus+.icon {
+    background-color:rgb(137, 221, 11);;
+    color: #fff;
+    border: none;
+    transition: 1s;
+}
+
+
+
+.radio {
+    display: none;
+}
+
+
+.buttonCheckout{
+
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    color: #FFF;
+    width: 100%;
+    outline: none;
+
+}
+
+
+
+
+video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height:100%;
+    z-index: -1;
+  }
