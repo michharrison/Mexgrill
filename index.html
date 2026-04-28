@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/logo.png" type="image/png">
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+         <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>MexicanGrill Restaurant</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo"></a>
+
+
+
+                <!--=============== NavBar ===============-->
+
+
+                
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+
+    
+                        <ul class="nav__item">
+                            <li><a href="#home" class="nav__link active-link">Inicio</a></li>
+                        </ul>
+
+
+                        <li class="nav__item">
+                            <li><a href="#about" class="nav__link">Sobre Nosotros</a></li>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#galeria" class="nav__link">Galeria</a>
+                        </li>
+                        
+
+                        <div>
+                            <ul>
+                                <li class="promociones">
+                                    <a href="#" class="nav__link">Promociones</a>
+                                        <div id="promo">
+                                            <table id="lista-submenu">
+                                                <thead>
+                                                    <tr>        
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                
+                                            </table>
+                                            <a href="tienda.html" id="tienda" class="btn">Tienda</a>
+                                        </div>        
+                                </li>
+                            </ul>    
+                        </div>  
+                             
+
+                        <li class="nav__item"> 
+                            <a href="#menu" class="nav__link">Menú</a>
+                        </li>
+
+
+                        <li class="nav__item">
+                            <a href="#contacto" class="nav__link"> Contacto</a>
+                        </li>
+                            
+                        <!-- Carrito de compras -->
+
+                         <div class="cart-btn">           
+                            <a href="Tienda.html">
+                                <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+                                <small class="cart-qty">0</small>
+                            </a>
+                        </div>
+                            
+                                
+                    </ul>
+            
+                
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Modo Oscuro</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+                    
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-function-line"></i>
+                    </div>
+                </div>   
+            </nav>
+        </header>
+
+
+    <main class="main.js">
+            
+    <!--==================== HOME ====================-->
+
+    <section class="home" id="home">
+        <img src="assets/img/portada.png" alt="" class="home__img">
+        <div class="home__container container grid">
+            <div class="home__social">
+                <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                    <i class="ri-facebook-box-fill"></i>
+                </a>
+                <a href="https://www.instagram.com/mex.icangrill/?igsh=MWhwMDl4Zzltb3lsbg%3D%3D" target="_blank" class="home__social-link">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                    <i class="ri-twitter-fill"></i>
+                </a>
+            </div>
+            <div class="home__data">
+                <a href="#menu" class="button">Menú</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+    <!--==================== Sobre Nosotros ====================-->
+    <section class="about section" id="about">
+        <div class="about__container container grid">
+            <div class="about__data">
+                <h2 class="section__title about__title"> Mexican <br> Grill</h2>
+                <p class="about__description">Somos un restaurante mexicano auténtico que celebra la riqueza de la cultura culinaria mexicana.
+                    Nuestra pasión es ofrecer sabores tradicionales con un toque moderno, creando experiencias gastronómicas memorables.
+                    Desde tacos exquisitos hasta platillos emblemáticos, cada bocado es una fiesta de autenticidad y sabor.
+                    ¡Bienvenidos a nuestra casa, donde la comida mexicana cobra vida!.
+                </p>
+                <a href="#contac" class="button">¡ Reserva ahora !</a>
+            </div>
+            <div class="about__img">
+                <div class="about__img-overlay">
+                    <img src="assets/img/logo.png" alt="" class="about__img-two">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--==================== Galeria====================-->
+
+    <section class="discover section" id="galeria">
+        <h2 class="section__title">Galeria <br> Grill</h2>
+
+        <div class="discover__container container swiper-container">
+            <div class="swiper-wrapper">
+                <!--==================== DISCOVER 1 ====================-->
+                <div class="discover__card swiper-slide">
+                    <img src="assets/img/restaurant.jpg" alt="" class="discover__img">
+                    <div class="discover__data">
+                        <h2 class="discover__title">Restaurante</h2>
+                        <span class="discover__description">Es el corazón del establecimiento</span>
+                    </div>
+                </div>
+
+                <!--==================== DISCOVER 2 ====================-->
+                <div class="discover__card swiper-slide">
+                    <img src="assets/img/chef.jpg" alt="" class="discover__img">
+                    <div class="discover__data">
+                        <h2 class="discover__title">Chef</h2>
+                        <span class="discover__description">A la parrilla</span>
+                    </div>
+                </div>
+
+                <!--==================== DISCOVER 3 ====================-->
+                <div class="discover__card swiper-slide">
+                    <img src="assets/img/bartender.jpg" alt="" class="discover__img">
+                    <div class="discover__data">
+                        <h2 class="discover__title">Bartender</h2>
+                        <span class="discover__description">Profesional versátil y creativo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </section>
+            <section>
+                     <div class="slider-frame">
+                           <ul>
+                                <li><img src="assets/img/P1.png" alt=""></li>
+                                <li><img src="assets/img/P2.png" alt=""></li>
+                                <li><img src="assets/img/P3.png" alt=""></li>
+                                <li><img src="assets/img/P4.png" alt=""></li>
+                           </ul>
+                    </div>
+            </section>
+            <!--==================== EXPERIENCE ====================-->
+            <section class="experience section">
+                <h2 class="section__title">Descubre el sabor auténtico <br>  de México en cada plato </h2>
+
+                <div class="experience__container container grid">
+                    <div class="experience__content grid">
+                        <div class="experience__data">
+                            <h2 class="experience__number">5</h2>
+                            <span class="experience__description">Años <br> de experiencia</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">+1,000</h2>
+                            <span class="experience__description">Nuestros <br> clientes </span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">+20</h2>
+                            <span class="experience__description">Platillos <br> culinarios</span>
+                        </div>
+                    </div>
+
+                    <div class="experience__img grid">
+                        <div class="experience__overlay">
+                            <img src="assets/img/pizza.jpg" alt="" class="experience__img-one">
+                        </div>
+                        
+                        <div class="experience__overlay">
+                            <img src="assets/img/vino.jpg" alt="" class="experience__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== VIDEO ====================-->
+            <section class="video section">
+                <h2 class="section__title"> Video </h2>
+
+                <div class="video__container container">
+                    <p class="video__description">Sumérgete en el irresistible mundo de las carnes con nuestro último vídeo. 
+                        Desde jugosas parrilladas hasta tiernos cortes de res, exploramos texturas y sabores que te harán desear cada bocado. 
+                        Únete a nosotros en este viaje culinario donde la pasión por la carne se encuentra con la perfección en cada asado. ¡Prepárate para despertar tus sentidos y descubrir la magia de la carne en su máxima expresión!
+                    </p>
+
+                    <div class="video__content">
+                        <video id="video-file">
+                            <source src="assets/video/video.mp4" type="video/mp4">
+                        </video>
+
+                        <button class="button button--flex video__button" id="video-button">
+                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+             <!--====================MENU ===================-->
+
+             <section class="discover section" id="menu">
+                <h2 class="section__title">Menu</h2>
+                
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== DISCOVER 1 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/MENU2.png" alt="" class="discover__img">
+                            <div class="discover__data">
+                              
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 2 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/MENU.png" alt="" class="discover__img">
+                            <div class="discover__data">
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section>
+
+            <!--==================== PROMOCIONES ====================-->
+            <section class="discover section" id="promo">
+                <h2 class="section__title" >Nuestras Promos</h2>
+
+                <div class="place__container container grid">
+                    
+                    <!--==================== Comida 1 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/cortes.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">5,0</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title"></h3>
+                                <span class="place__subtitle">Cortes</span>
+                                <span class="place__price">$699</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== Comida 2 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/promtacos.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,9</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title"></h3>
+                                <span class="place__subtitle">Tacos</span>
+                                <span class="place__price">$100</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== Comida 3 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/postres.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,9</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title"></h3>
+                                <span class="place__subtitle">Postres</span>
+                                <span class="place__price">$75</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== Bebidas 4 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/corona.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,9</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title"></h3>
+                                <span class="place__subtitle">Pal´ Calor</span>
+                                <span class="place__price">$20</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== Bebidas 5 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/tecate.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">5,0</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title"></h3>
+                                <span class="place__subtitle">Pal´ Calor</span>
+                                <span class="place__price">$20</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+
+                    <!--==================== Bebidas 6 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/coronaprom.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title"></h3>
+                                <span class="place__subtitle">Pal´ Calor</span>
+                                <span class="place__price">$90</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+
+        
+
+
+                <!--==================== Form contacto ====================-->
+
+
+                <div class="contact-form">
+                    <section class="discover section" id="contacto">
+                    <h2 class="section__title" >contactanos</h2>
+
+                    <div class="container">
+                        <div class="main">
+                            <div class="content">
+                                <h2>¡Tu opinión es invaluable para nosotros!</h2>
+                                
+                                <form action="#" method="post">
+                                    <input type="text" name="name" placeholder="Ingresa tu nombre">
+                                  
+                                    <input type="email" name="name" placeholder="Ingresa correo">
+                                    <textarea name="message" placeholder="Mensaje"></textarea>                   
+                                    <button type="submit" class="btn"> Enviar <i class="fas fa-paper-plane"></i></button>
+                                </form>
+                            </div>
+                            
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.92736553322794!2d-96.9345286817385!3d18.89427339408519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c4e569a42a85d9%3A0x72d983629603563!2sAv%201%2018%2C%20Centro%2C%2094500%20C%C3%B3rdoba%2C%20Ver.!5e0!3m2!1ses!2smx!4v1710097335627!5m2!1ses!2smx" 
+                                width="500" 
+                                height="400" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+              
+                
+
+            
+            <!--==================== Patroc ====================-->
+
+            <section class="sponsor section">
+                <div class="sponsor__container container grid">
+                    <div class="sponsor__content">
+                        <img src="assets/img/elahumado.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/coyote.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/lachata.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/lafrontera.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/mxlindo.png" alt="" class="sponsor__img">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/mex.icangrill/?igsh=MWhwMDl4Zzltb3lsbg%3D%3D" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                   
+                </div>
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2024 MexicanGrill. Todos los derechos.</p>
+                    <div class="footer__terms">
+                        <a href="#" class="footer__terms-link">Terminos & Condiciones</a>
+                        <a href="#" class="footer__terms-link">Politicas de Privacidad</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/closelateral.js"></script>
+
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        
+    </body>
+</html>

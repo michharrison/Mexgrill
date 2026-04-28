@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/logo.png" type="image/png">
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+        
+         <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/tienda.css">
+
+        <title>MexicanGrill Restaurant</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo"></a>
+
+
+
+               
+
+
+        <!--=============== NavBar ===============-->
+
+
+                
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+
+    
+                        <ul class="nav__item">
+                            <li><a href="index.html #home" class="nav__link active-link">Inicio</a></li>
+                        </ul>
+
+
+                        <li class="nav__item">
+                            <li><a href="index.html #about" class="nav__link">Sobre Nosotros</a></li>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="index.html #galeria" class="nav__link">Galeria</a>
+                        </li>
+                        
+
+                        <div>
+                            <ul>
+                                <li class="promociones">
+                                    <a href="#" class="nav__link">Promociones</a>
+                                        <div id="promo">
+                                            <table id="lista-submenu">
+                                                <thead>
+                                                    <tr>        
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                
+                                            </table>
+                                            <a href="#" id="tienda" class="btn">Tienda</a>
+                                        </div>        
+                                </li>
+                            </ul>    
+                        </div>  
+                             
+
+                        <li class="nav__item"> 
+                            <a href="index.html #menu" class="nav__link">Menú</a>
+                        </li>
+
+
+                        <li class="nav__item">
+                            <a href="index.html #contacto" class="nav__link"> Contacto</a>
+                        </li>
+                            
+                        <!-- Carrito de compras -->
+
+                         <div class="cart-btn">          
+                                <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+                                <small class="cart-qty">0</small>
+                           
+                        </div>
+                            
+                                
+                    </ul>
+            
+                
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Modo Oscuro</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+                    
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-function-line"></i>
+                    </div>
+                </div>   
+            </nav>
+        </header>
+
+
+    <main class="main.js">
+   
+            <!--==================== REDES S ====================-->
+
+            <section class="home" id="home">
+                <img src="assets/img/portada.png" alt="" class="home__img">
+                <div class="home__container container grid">
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/mex.icangrill/?igsh=MWhwMDl4Zzltb3lsbg%3D%3D" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+
+
+        <!-- Barra Lateral Carrito -->
+
+        <div class="cart">
+            <h2 class="cart-title">Tu Carrito</h2>   
+        
+
+         <!-- Contenedor Barra Lateral -->
+
+            <div class="cart-content">
+
+            </div>
+
+                 <!-- Total Carrito -->
+
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+
+                <!-- Comprar Carrito -->
+
+                
+                <button type="button" class="btn-buy" onclick="window.location.href='checkout.html'">Comprar Ahora</button>
+
+                <!-- Cerrar Carrito -->
+                <i class="fa-solid fa-x" id="close-cart"></i>
+
+            
+        </div>
+
+
+
+            <!--  Productos -->
+
+            <section class="shop container">
+                <h2 class="section-title">Comida</h2>
+
+                <div class="shop-content">
+
+                    <!-- Producto 1 -->
+
+                    <div class="product-box">
+                        <img src="assets/img/pizza.png" alt="" class="product-img">
+                        <h2 class="product-title">Pizza</h2>
+                        <span>★★★★☆</span><br>
+                        <span class="price">$99</span>
+                        <i class="fa-solid fa-bag-shopping add-cart"></i>
+                    </div>
+
+                    <!-- Producto 2 -->
+
+                    <div class="product-box">
+                        <img src="assets/img/lasaña.png" alt="" class="product-img">
+                        <h2 class="product-title">Lasaña</h2>
+                        <span>★★★★★</span><br>
+                        <span class="price">$190</span>
+                        <i class="fa-solid fa-bag-shopping add-cart"></i>
+                    </div>
+
+                    <!-- Producto 3 -->
+
+                    <div class="product-box">
+                        <img src="assets/img/carne.png" alt="" class="product-img">
+                        <h2 class="product-title">Corte Rib Eye</h2>
+                        <span>★★★★★</span><br>
+                        <span class="price">$230</span>
+                        <i class="fa-solid fa-bag-shopping add-cart"></i>
+                    </div>
+
+                    <!-- Producto 4 -->
+
+                    <div class="product-box">
+                        <img src="assets/img/Tempura.png" alt="" class="product-img">
+                        <h2 class="product-title">Helado Tempura</h2>
+                        <span>★★★☆☆</span><br>
+                        <span class="price">$79</span>
+                        <i class="fa-solid fa-bag-shopping add-cart"></i>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="shop container">
+                <h2 class="section-title">Bebidas</h2>
+                <div class="shop-content">
+    
+
+                    <!-- Producto 5 -->
+
+                    <div class="product-box">
+                        <img src="assets/img/Vino.png" alt="" class="product-img">
+                        <h2 class="product-title">Vino Felsina Berardenga </h2>
+                        <span>★★★★★</span><br>
+                        <span class="price">$990</span>
+                        <i class="fa-solid fa-bag-shopping add-cart"></i>
+                    </div>
+
+                    <!-- Producto 6 -->
+
+                    <div class="product-box">
+                        <img src="assets/img/tecatito.png" alt="" class="product-img">
+                        <h2 class="product-title">Cerveza Tecate Light Twist 355Ml</h2>
+                        <span>★★★☆☆</span><br>
+                        <span class="price">$20</span>
+                        <i class="fa-solid fa-bag-shopping add-cart"></i>
+                    </div>
+
+                    <!-- Producto 7 -->
+
+                    <div class="product-box">
+                        <img src="assets/img/rifadita.png" alt="" class="product-img">
+                        <h2 class="product-title">Coronas Rifaditas Mix pack 12 | 220Ml</h2>
+                        <span>★★★★☆</span><br>
+                        <span class="price">$224</span>
+                        <i class="fa-solid fa-bag-shopping add-cart"></i>
+                    </div>
+
+                    <!-- Producto 8 -->
+
+                    <div class="product-box">
+                        <img src="assets/img/cubetaCorona.png" alt="" class="product-img">
+                        <h2 class="product-title">Cubeta Corona pack 5</h2>
+                        <span>★★★★☆</span><br>
+                        <span class="price">$90</span>
+                        <i class="fa-solid fa-bag-shopping add-cart"></i>
+                    </div>
+
+                </div>
+            </section>               
+
+            
+    
+
+
+
+
+
+
+         <!--========== SCROLL UP ==========-->
+         <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/closelateral.js"></script>
+
+
+
+    </body>
+</html>
